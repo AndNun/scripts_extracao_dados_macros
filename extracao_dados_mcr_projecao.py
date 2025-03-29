@@ -4,7 +4,7 @@ import sqlite3
 
 import sys
 
-sys.path.insert(0, "C:/Users/AndsonSilva/Desktop/Estudos/repositorios_git/extracao_dados_macroeconomicos/lib")
+sys.path.insert(0, "./lib")
 
 import utils
 
