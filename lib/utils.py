@@ -3,7 +3,8 @@ import requests
 from bcb import Expectativas
 expec = Expectativas()
 
-# Criando função para consulta 
+# Função para capturar os dados macroeconomicos reais
+
 def consulta_bcb(codigo_bcb):
     
     url = 'https://api.bcb.gov.br/dados/serie/bcdata.sgs.{}/dados?formato=json'.format(codigo_bcb)
@@ -11,7 +12,7 @@ def consulta_bcb(codigo_bcb):
     df['data'] = pd.to_datetime(df['data'], dayfirst=True)
     return df
 
-# Criando função para capturar os dados referente as projeções
+# Função para capturar os dados referente as projeções macroeconomicas
 
 def exp_proj(tipo_exp = '', indicador = '', basecalculo = 0):
 
