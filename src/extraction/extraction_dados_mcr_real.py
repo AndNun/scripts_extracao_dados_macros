@@ -11,7 +11,7 @@ import utils
 
 # %%
 
-# Carregando dados variação do ipca mensam
+# Carregando dados ipca mensal
 df_ipca_real = utils.consulta_bcb(433)
 
 df_ipca_real.head()
